@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doggie's Wonderland Webcam</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .grid-container {
+            display: grid;
+            gap: 20px;
+            justify-content: center;
+        }
+        @media (min-width: 1200px) {
+            .grid-container {
+                grid-template-columns: repeat(4, 400px);
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 400px);
+            }
+        }
+        @media (max-width: 767px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 400px);
+            }
+        }
+        iframe {
+            border: 3px solid #003366;
+            border-radius: 10px;
+            width: 100%;
+            height: 300px;
+        }
+        .cam-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+        .cam-label {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #003366;
+        }
+        .button {
+            margin-top: 10px;
+            background-color: #ff9900;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="cam-container">
+            <iframe src="https://www.ipcamlive.com/player/player.php?alias=6111a4f6c1edf&autoplay=1&&token=n0qwa%2BDlf2eIqS0mRSmdvdJDHxwdF5BSugQJc8IvgxE%3D" title="Large Indoor Playroom A"></iframe>
+            <div class="cam-label">Large Indoor Playroom A</div>
+            <a href="#" class="button">View Details</a>
+        </div>
+        <div class="cam-container">
+            <iframe src="https://www.ipcamlive.com/player/player.php?alias=6111a4ba3af5d&autoplay=1&&token=dDuzcVXDOuNynxBKvHqpzJKhlIlmBp9rE5dAcJF%2FHHU%3D" title="Large Indoor Playroom B"></iframe>
+            <div class="cam-label">Large Indoor Playroom B</div>
+            <a href="#" class="button">View Details</a>
+        </div>
+        <div class="cam-container">
+            <iframe src="https://www.ipcamlive.com/player/player.php?alias=6111a0d8eab5c&autoplay=1&&token=rH3PWDckaA7aJ6fje%2B02XX%2FzOzH6Cij%2BdQLSa3OiFuk%3D" title="Large Outdoor A Yard"></iframe>
+            <div class="cam-label">Large Outdoor A Yard</div>
+            <a href="#" class="button">View Details</a>
+        </div>
+        <div class="cam-container">
+            <iframe src="https://www.ipcamlive.com/player/player.php?alias=6111a564d8891&autoplay=1&&token=mDF%2Fc79JFVkQ%2BTeA6gLjMJQYDxykPKlZH44nGvxHt%2Bk%3D" title="Large Outdoor B Yard"></iframe>
+            <div class="cam-label">Large Outdoor B Yard</div>
+            <a href="#" class="button">View Details</a>
+        </div>
+        <div class="cam-container">
+            <iframe src="https://www.ipcamlive.com/player/player.php?alias=6111a56d46881&autoplay=1&&token=5%2FETfypXKjvOxzUxVp%2FH%2Fzv%2BELcuTai%2B0AHEKO42soM%3D" title="Large Outdoor A & B Yard"></iframe>
+            <div class="cam-label">Large Outdoor A & B Yard</div>
+            <a href="#" class="button">View Details</a>
+        </div>
+        <div class="cam-container">
+            <iframe src="https://www.ipcamlive.com/player/player.php?alias=6111a5c92d45e&autoplay=1&&token=CKPhInxVefy2uMR%2BCG6u5zyOVJs7FcPTlQk1UQk%2B34s%3D" title="Large Outdoor Side Yard"></iframe>
+            <div class="cam-label">Large Outdoor Side Yard</div>
+            <a href="#" class="button">View Details</a>
+        </div>
+        <div class="cam-container">
+            <iframe src="https://www.ipcamlive.com/player/player.php?alias=6111a4ed630c7&autoplay=1&&token=HXM20%2F5A8jcoSD7ZZg7AuQ49gk9yDnyNfSZBM5I3hC4%3D" title="Smalls Indoor Playroom"></iframe>
+            <div class="cam-label">Smalls Indoor Playroom</div>
+            <a href="#" class="button">View Details</a>
+        </div>
+        <div class="cam-container">
+            <iframe src="https://www.ipcamlive.com/player/player.php?alias=6111a440ef275&autoplay=1&&token=6zrKK5LBgGOZVZFgjhX0CyppTMXVIJeZ11kHxRrcYpc%3D" title="Smalls Outdoor Yard"></iframe>
+            <div class="cam-label">Smalls Outdoor Yard</div>
+            <a href="#" class="button">View Details</a>
+        </div>
+    </div>
+</body>
+</html>
